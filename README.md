@@ -1,19 +1,25 @@
 # SetupChamp
 
-## Linux system updater and software installer
+SetupChamp updates Linux systems and provides an interactive menu for installing
+useful applications and terminal tools.
 
-Run `./setupchamp.sh` to detect the Linux distribution and its package manager,
-refresh package metadata, upgrade installed packages, and see the package
-manager's pre-upgrade count of available package updates. Afterward, choose one
-or more programs from the interactive menu and confirm before installation.
+## Features
 
-The script supports `apt`, `dnf`, `yum`, `microdnf`, `pacman`, `zypper`, and
-`apk`. It needs Bash and administrator access (either run it as root or have
-`sudo` installed). The menu includes Brave Browser, Firefox, Git, Neovim, VLC,
-and LazyGit. Brave uses its vendor repository on apt-, dnf/yum-, and
-zypper-based systems, and Flathub on other supported systems. If native
-LazyGit installation fails, the script downloads its Linux binary from the
-official GitHub releases and installs it in `/usr/local/bin`.
+- Updates the system using its detected package manager.
+- Interactive app picker: arrow keys to navigate, Space to select, Enter to continue.
+- Supports apt, dnf, yum, microdnf, pacman, zypper, and apk.
 
-Package upgrades require an internet connection. GitHub fallback requires
-`curl` or `wget`; the script does not install either automatically.
+## Apps
+
+- Brave Browser and Firefox
+- Git and Neovim
+- Visual Studio Code
+- Deskflow (native package first, Flathub fallback)
+- ONLYOFFICE Desktop Editors
+- Alacritty Terminal with Chris Titus settings
+- Docker Engine
+- Fastfetch
+- Chris Titus Bash prompt with Meslo Nerd Font
+
+Run with `./setupchamp.sh`. Requires Bash and administrator
+privileges (`sudo`).
