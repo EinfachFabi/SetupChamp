@@ -1,7 +1,6 @@
 # SetupChamp
 
-SetupChamp updates Linux systems and provides an interactive menu for installing
-useful applications and terminal tools.
+SetupChamp is to setup a new Linux system, apply updates, and provide an interactive menu for installing useful applications and terminal tools.
 
 ## Features
 
